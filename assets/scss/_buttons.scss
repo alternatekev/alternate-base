@@ -1,0 +1,66 @@
+@import colors;
+@import typography;
+
+.button {
+  background: $white;
+  color: $cyan500;
+  display: flex;
+  padding: 7.5px 15px;
+  font-family: $ca-sans;
+  text-decoration: none;
+  border-radius: 2px;
+  font-weight: 300;
+  box-shadow: 0px 2.5px 5px transparentize( $blueGrey200, 0.5 );
+  align-items: center;
+  transition: all 180ms ease-in-out;
+  margin-left: 10px;
+
+  @media( max-width: 600px ){
+    flex: 1;
+    justify-content: center;
+  }
+
+  &:hover {
+    background: $cyan50;
+  }
+
+  &:before {
+    @include material-icons;
+    color: $cyan100;
+    margin-right: 5px;
+  }
+
+  img {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+  }
+
+  &.sign-in {
+    background: $cyan500;
+    color: $white;
+
+    &:before {
+      content: '\e853';
+    }
+
+    &:hover {
+      background: $cyan600;
+    }
+  }
+
+  &.hidden {
+    display: none;
+  }
+}
+
+.sign-in-integrations {
+  display:none;
+  &.visible {
+    display: flex;
+  }
+
+  @media( max-width: 600px ){
+    width: 100%;
+  }
+}

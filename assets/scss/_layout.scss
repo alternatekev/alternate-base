@@ -1,0 +1,40 @@
+@import "colors";
+
+body {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 100% 100% !important;
+}
+
+.app-bar {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container {
+  max-width: 600px;
+  text-align: center;
+}
+
+.prefinery-form-embed{
+  width: 58%;
+  margin: 0 auto;
+}
+
+.footer {
+  font-size: 10px;
+  text-align: center;
+  color: $blueGrey200;
+
+  &.disclaimer {
+    margin: 30px auto;
+    width: 58%;
+    text-align: center;
+  }
+
+  a {
+    cursor: pointer;
+    color: $cyan500;
+  }
+}

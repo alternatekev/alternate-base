@@ -1,0 +1,8 @@
+.wp-menu-image.dashicons-before.dashicons-admin-generic:before {
+	font-family: FontAwesome !important;
+	content: '\f05d' !important;
+}
+
+ul#ui-id-1.ui-autocomplete.ui-front.ui-menu.ui-widget.ui-widget-content {
+	z-index: 10000;
+}

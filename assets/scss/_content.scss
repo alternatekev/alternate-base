@@ -1,0 +1,27 @@
+.badges {
+  width: auto;
+  margin: 0 auto;
+}
+
+.app-store-badge {
+  width: 135px;
+}
+
+.article-body {
+  text-align: left;
+  font-family: $ca-sans;
+
+  h1, h2, h3, h4, h5, h6, p, b, ul, li, a, em, strong, i, * {
+    font-family: $ca-sans;
+    text-align: left;
+    line-height: 1.5;
+    color: $blueGrey600;
+  }
+  a {
+      color: $cyan500;
+  }
+
+  sup {
+    font-size: $small;
+  }
+}

@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "CA Sans Web";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url("assets/fonts/ca_sans_web-regular.eot?#iefix") format("embedded-opentype"),
+    url("assets/fonts/ca_sans_web-regular.woff2") format("woff2"),
+    url("assets/fonts/ca_sans_web-regular.woff") format("woff"),
+    url("assets/fonts/ca_sans_web-regular.svg#CA Sans Web") format("svg");
+}
+
+@font-face {
+  font-family: "CA Sans Web";
+  font-style: normal;
+  font-weight: bold;
+  src:
+    url("assets/fonts/ca_sans_web-bold.eot?#iefix") format("embedded-opentype"),
+    url("assets/fonts/ca_sans_web-bold.woff2") format("woff2"),
+    url("assets/fonts/ca_sans_web-bold.woff") format("woff"),
+    url("assets/fonts/ca_sans_web-bold.svg#CA Sans Web") format("svg");
+}

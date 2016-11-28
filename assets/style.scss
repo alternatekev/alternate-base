@@ -1,0 +1,26 @@
+/*
+Theme Name: Catchfly WordPress Theme
+Theme URI: https://github.com/alternatekev/catchfly-default
+Author: Kevin Conboy
+Author URI: https:/catchfly.io/
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: alt
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import "scss/reset";
+@import "scss/colors";
+@import "scss/wp_customizations";
+@import "scss/typography";
+@import "assets/fonts/material-icons.css";
+@import "scss/layout";
+@import "scss/content";
+@import "scss/sidebars";
+@import "scss/menus";
+@import "scss/header";
+@import "scss/buttons";
+@import "assets/scss/bootstrap-grid/grid.css";

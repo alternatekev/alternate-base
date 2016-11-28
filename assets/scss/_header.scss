@@ -1,0 +1,44 @@
+@import "colors";
+
+h1, h2, h3 {
+  font-family: $ca-sans;
+  font-weight: normal;
+  text-align: center;
+  color: $cyan500;
+}
+
+h1 {
+  margin: 0 auto 20px auto;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: normal;
+  color: $cyan500;
+  padding: 0;
+  padding-top: 50px;
+  letter-spacing: -0.00825em;
+
+  @media(max-width:800px) {
+    padding-top: 25px;
+  }
+}
+
+h2 {
+  font-weight: 300;
+  font-style: none;
+  font-size: 25px;
+  line-height: 35px;
+  color: $blueGrey400;
+  letter-spacing: -0.00825em;
+  text-align: center;
+  margin: 30px -50px;
+
+  @media( max-width:1024px ) {
+    margin: 30px;
+  }
+}
+
+h3 {
+  color: $blueGrey700;
+  font-weight: normal;
+  font-size: 25px;
+}

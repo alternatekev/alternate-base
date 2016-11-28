@@ -1,0 +1,35 @@
+{% block html_head_container %}
+
+{% include 'html-header.twig' %}
+	{% block head %}
+	{% endblock %}
+{% endblock %}
+
+	<body class="{{body_class}}" data-template="base.twig">
+
+    {% include 'app-bar.twig' %}
+
+    <div class="container">
+  		<header class="header" >
+  			{% block header %}
+  			{% endblock %}
+  		</header>
+
+  		<section id="content" role="main" class="container-fluid">
+  			{% block content %}
+  				Sorry, no content
+  			{% endblock %}
+  		</section>
+
+  		{% block footer %}
+  			<footer class="footer container-fluid">
+  				{% include 'footer.twig' %}
+  			</footer>
+  			{{ function('wp_footer') }}
+  		{% endblock %}
+    </div>
+      <!-- Start of Async Prefinery Code -->
+  <script type="text/javascript">var _pfy = _pfy || [];(function(){function pfy_load(){var pfys=document.createElement('script');pfys.type='text/javascript';pfys.async=true;pfys.src='https://widget.prefinery.com/widget/v2/cilb6urn.js';var pfy=document.getElementsByTagName('script')[0];pfy.parentNode.insertBefore(pfys,pfy);}if (window.attachEvent){window.attachEvent('onload',pfy_load);}else{window.addEventListener('load',pfy_load,false);}})();</script>
+  <!-- End of Async Prefinery Code -->
+	</body>
+</html>

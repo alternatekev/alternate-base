@@ -1,0 +1,48 @@
+{% extends "base.twig" %}
+
+
+{% block header %}
+<div class="row">
+  <div class="col-md-12">
+    <h1>{{post.get_field('header_text')}}</h1>
+    <h2>{{post.get_field('subheader_1')}}</h2>
+    <h2>{{post.get_field('subheader_2')}}</h2>
+  </div>
+</div>
+{% endblock %}
+
+
+{% block content %}
+  <div class="row">
+    <div class="col-md-12">
+      <h3>{{post.prefinery_title}}</h3>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="prefinery-form-embed"></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="footer disclaimer">{{post.disclaimer}}</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="badges">
+        {% for button in post.get_field('app_store_badges') %}
+          {% if button.badge == 'Google Play' %}
+            {% include 'badge-android.twig' with button %}
+          {% elseif button.badge == 'iOS App Store'%}
+            {% include 'badge-ios.twig' with button %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>    
+
+{% endblock %}
