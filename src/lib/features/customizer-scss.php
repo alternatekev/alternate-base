@@ -10,7 +10,7 @@ class CustomizerScss {
 	}
 
 	function generate_new_scss(){
-		$this->scss_file = get_template_directory() . '/assets/scss/_wp_customizations.scss';
+		$this->scss_file = get_template_directory() . '/src/assets/scss/_wp_customizations.scss';
 		$file = fopen( $this->scss_file, 'w' );
 		fwrite( $file, $this->translate_customizations_to_scss() );
 		fclose( $file );

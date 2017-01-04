@@ -1,17 +1,16 @@
 <?php
 require_once( 'features/wp.php' );
-require_once( 'features/catchfly.php' );
+require_once( 'features/theme.php' );
 
 class ThemeFeatures extends TimberSite {
 
-	var $wp, $catchfly;
+	var $wp, $theme;
 
 	function __construct() {
 
 		$this->wp = new WPFeatures();
-		$this->catchfly = new CatchflyFeatures();
+		$this->theme = new Theme();
 
-    $this->catchfly->enqueue_sign_in_buttons();
 		$this->wp->add_customizer_support();
 		$this->wp->add_sidebar_support();
 		$this->wp->add_menu_support();
